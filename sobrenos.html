@@ -8,47 +8,26 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
+<link rel="stylesheet" href="sobre.css">
 </head>
 <body>
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="slide">
-                    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/830F/production/_103315533_museuimperial.jpg" alt="">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide">
-                    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/830F/production/_103315533_museuimperial.jpg" alt="">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide">
-                    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/830F/production/_103315533_museuimperial.jpg" alt="">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide">
-                    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/830F/production/_103315533_museuimperial.jpg" alt="">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide">
-                    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/830F/production/_103315533_museuimperial.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <div class="swiper-scrollbar"></div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
-      <script>
-        const swiper = new Swiper('.swiper', {
-        direction: 'vertical',
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  direction: 'vertical',
   loop: true,
 
   pagination: {
@@ -64,6 +43,6 @@
     el: '.swiper-scrollbar',
   },
 });
-      </script>
+  </script>
 </body>
 </html>
