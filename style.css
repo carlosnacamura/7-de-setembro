@@ -1,13 +1,24 @@
+:root {
+  --azul: #063fbe;
+  --verde: #30a405;
+  --amarelo: #f9c108;
+  --branco: #cedee6;
+  --marron_velho: #5f631c;
+  --salmao: #cf9157;
+  --branco_sujo: #eacaa1;
+  --cinza: #bbaf99;
+}
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 body {
-  background-color: black;
+  background-color: var(--azul);
 }
 header {
-    background-image: url(https://usagif.com/wp-content/uploads/gif/brazilian-flag-3.gif);
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-realista-de-7-de-setembro_52683-91812.jpg?w=826&t=st=1695066277~exp=1695066877~hmac=5dbb12c98a6cdeacdbd075eab5731df98fcdaa2e9d00df6a09f649db063639ab);
+    background-position: center;
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -25,128 +36,99 @@ header {
 .baixo h1 {
     font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
 }
-.baixo a {
-    padding: 10px;
-    background-color: rgb(34, 34, 34,.5);
-    border-radius: 10px;
-    width: 15%;
-    text-decoration: none;
-    color: white;
-    font-family: monospace;
-    font-size: 30px;
+.baixo * {
+  margin-left: 20px;
 }
-
-.btn-53,
-.btn-53 *,
-.btn-53 :after,
-.btn-53 :before,
-.btn-53:after,
-.btn-53:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-
-.btn-53 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-  width: 30%;
-}
-
-.btn-53:disabled {
-  cursor: default;
-}
-
-.btn-53:-moz-focusring {
-  outline: auto;
-}
-
-.btn-53 svg {
-  display: block;
-  vertical-align: middle;
-}
-
-.btn-53 [hidden] {
-  display: none;
-}
-
-.btn-53 {
-  border: 1px solid;
-  border-radius: 999px;
-  box-sizing: border-box;
-  display: block;
-  font-weight: 900;
-  overflow: hidden;
-  padding: 1.2rem 3rem;
+button {
   position: relative;
-  text-transform: uppercase;
-}
-
-.btn-53 .original {
-  background: #fff;
-  color: #000;
-  display: grid;
-  inset: 0;
-  place-content: center;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: var(--verde);
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
-  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
-}
-
-.btn-53:hover .original {
-  transform: translateY(100%);
-}
-
-.btn-53 .letters {
-  display: inline-flex;
-}
-
-.btn-53 span {
-  opacity: 0;
-  transform: translateY(-15px);
-  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
-}
-
-.btn-53 span:nth-child(2n) {
-  transform: translateY(15px);
-}
-
-.btn-53:hover span {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.btn-53:hover span:nth-child(2) {
-  transition-delay: 0.1s;
-}
-
-.btn-53:hover span:nth-child(3) {
-  transition-delay: 0.2s;
-}
-
-.btn-53:hover span:nth-child(4) {
-  transition-delay: 0.3s;
-}
-
-.btn-53:hover span:nth-child(5) {
-  transition-delay: 0.4s;
-}
-
-.btn-53:hover span:nth-child(6) {
-  transition-delay: 0.5s;
-}
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
 .explicacao {
   display: flex;
   margin: 10px;
@@ -159,6 +141,37 @@ main h1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
 }
+.mural {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 600px 600px;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--marron_velho);
+  padding: 20px;
+}
+.mural * {
+  width: 100%;
+  border-radius: 20px;
+  border: 15px medium var(--marron_velho);
+  animation: descida 2s linear infinite alternate;
+}
+.foto_mural:nth-child(1) {
+  animation-delay: 0s; 
+}
+
+.foto_mural:nth-child(2) {
+  animation-delay: 0.5s; 
+}
+
+.foto_mural:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.foto_mural:nth-child(4) {
+  animation-delay: 1.5s;
+}
 .explicacao p {
   font-family: 'Courier New', Courier, monospace;
   color: white;
@@ -169,4 +182,12 @@ main h1 {
 footer {
   background-color: white;
   padding: 30px;
+}
+@keyframes descida {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
