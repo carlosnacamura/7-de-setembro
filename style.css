@@ -148,13 +148,12 @@ main h1 {
   justify-items: center;
   align-items: center;
   gap: 10px;
-  background-color: var(--marron_velho);
+  background-image: url(https://st4.depositphotos.com/21038662/22917/i/450/depositphotos_229172680-stock-photo-old-brown-paper-background.jpg);
   padding: 20px;
 }
-.mural * {
+.mural img {
   width: 100%;
   border-radius: 20px;
-  border: 15px medium var(--marron_velho);
   animation: descida 2s linear infinite alternate;
 }
 .foto_mural:nth-child(1) {
@@ -171,6 +170,9 @@ main h1 {
 
 .foto_mural:nth-child(4) {
   animation-delay: 1.5s;
+}
+.foto_mural.zoom {
+  transform: scale(1.5px);
 }
 .explicacao p {
   font-family: 'Courier New', Courier, monospace;
