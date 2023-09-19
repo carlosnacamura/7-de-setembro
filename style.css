@@ -9,35 +9,35 @@
   --cinza: #bbaf99;
 }
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 body {
   background-color: var(--azul);
 }
 header {
-    background-image: url(https://img.freepik.com/vetores-gratis/fundo-realista-de-7-de-setembro_52683-91812.jpg?w=826&t=st=1695066277~exp=1695066877~hmac=5dbb12c98a6cdeacdbd075eab5731df98fcdaa2e9d00df6a09f649db063639ab);
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-image: url(https://img.freepik.com/vetores-gratis/fundo-realista-de-7-de-setembro_52683-91812.jpg?w=826&t=st=1695066277~exp=1695066877~hmac=5dbb12c98a6cdeacdbd075eab5731df98fcdaa2e9d00df6a09f649db063639ab);
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .baixo {
-    display: flex;
-    flex-direction:column;
-    gap: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .baixo h1 {
-    font-size: 90px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 3px white;
+  font-size: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 3px white;
 }
 .baixo * {
   margin-left: 20px;
@@ -54,14 +54,14 @@ button {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
- }
- 
- button.learn-more {
+}
+
+button.learn-more {
   width: 12rem;
   height: auto;
- }
- 
- button.learn-more .circle {
+}
+
+button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -70,26 +70,26 @@ button {
   height: 3rem;
   background: var(--verde);
   border-radius: 1.625rem;
- }
- 
- button.learn-more .circle .icon {
+}
+
+button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
- }
- 
- button.learn-more .circle .icon.arrow {
+}
+
+button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
- }
- 
- button.learn-more .circle .icon.arrow::before {
+}
+
+button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -99,9 +99,9 @@ button {
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
- }
- 
- button.learn-more .button-text {
+}
+
+button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -115,30 +115,28 @@ button {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
- }
- 
- button:hover .circle {
+}
+
+button:hover .circle {
   width: 100%;
- }
- 
- button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
- }
- 
- button:hover .button-text {
-  color: #fff;
- }
-.explicacao {
-  display: flex;
-  margin: 10px;
 }
-.explicacao img {
-  border-radius: 30px;
-  width: 50%;
+
+button:hover .button-text {
+  color: #fff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
 }
 .mural {
@@ -151,17 +149,17 @@ main h1 {
   background-image: url(https://st4.depositphotos.com/21038662/22917/i/450/depositphotos_229172680-stock-photo-old-brown-paper-background.jpg);
   padding: 20px;
 }
-.mural img {
+.foto_mural {
   width: 100%;
   border-radius: 20px;
   animation: descida 2s linear infinite alternate;
 }
 .foto_mural:nth-child(1) {
-  animation-delay: 0s; 
+  animation-delay: 0s;
 }
 
 .foto_mural:nth-child(2) {
-  animation-delay: 0.5s; 
+  animation-delay: 0.5s;
 }
 
 .foto_mural:nth-child(3) {
@@ -171,15 +169,48 @@ main h1 {
 .foto_mural:nth-child(4) {
   animation-delay: 1.5s;
 }
-.foto_mural.zoom {
-  transform: scale(1.5px);
+.explicacao {
+  display: flex;
+  margin: 10px;
+  width: 60%;
+  margin-left: -29%;
+}
+.explicacao img {
+  border-radius: 30px;
+  width: 50%;
 }
 .explicacao p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: white;
 }
 .importancia {
   margin: 10px;
+}
+.dom_pedro {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin-right: -10%;
+}
+.dom_pedro img {
+  width: 600px;
+  border-radius: 20px;
+}
+.dom_pedro p {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+.ipiranga {
+  height: 50vh;
+  width: 100vw;
+  overflow-y: scroll;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Parque_Independ%C3%AAncia_-_Riacho_do_Ipiranga_1.JPG);
+}
+.ipiranga p {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
 }
 footer {
   background-color: white;
