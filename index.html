@@ -5,41 +5,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indepedência do Brasil</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
-      <div class="cima"></div>
-      <div class="baixo">
-        <h1>A Indepedência do Brasil</h1>
-        <a href="sobrenos.html">
-          <button class="learn-more">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Saiba mais</span>
-          </button>
-        </a>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide parte1">
+              <div class="slide_texts">
+                <h1>A Independencia do Brasil</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide parte2">
+              <div class="slide_texts">
+                <h1>Sua importância</h1>
+                <a href="sobrenos.html">
+                  <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Saiba mais</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide parte3">
+              <div class="slide_texts">
+                <h1>Contate-nos</h1>
+                <a href="contato.html" target="_blank">
+                  <button class="button">
+                    <p>Contato</p>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </header>
     <main>
-      <div class="mural">
-        <img
-          class="foto_mural"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_cores_ajustadas.jpg/800px-Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_cores_ajustadas.jpg"
-        />
-        <img
-          class="foto_mural"
-          src="https://www.florence.edu.br/wp-content/uploads/2021/09/Imagemmateria.png"
-        />
-        <img
-          class="foto_mural"
-          src="https://www.otempo.com.br/image/contentid/policy:1.2728360:1662467170/coroacao-de-dom-pedro-i-by-debret-jpg.jpg?f=3x2&w=1224"
-        />
-        <img
-          class="foto_mural"
-          src="https://i0.wp.com/jornal.usp.br/wp-content/uploads/2022/12/20221130_00_comercio_brasil_imperial_porto_estrela.jpg?fit=768%2C403&ssl=1"
-        />
-      </div>
       <div class="descricao">
         <h1>7 de setembro</h1>
         <div class="explicacao">
@@ -132,14 +146,22 @@
     </main>
     <footer>
       <span>&copy; Carlos Vinícius Nacamura de Oliveira</span>
-      <a
-        href="contato.html"
-      >
-        <button class="button">
-          <p>Contato</p>
-        </button>
-      </a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: true,
+        autoplay: {
+          delay: 9000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

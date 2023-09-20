@@ -21,16 +21,60 @@ body {
   background-color: var(--azul);
 }
 header {
-  background-image: url(https://usagif.com/wp-content/uploads/gif/brazilian-flag-3.gif);
-  background-position: center;
-  background-size: cover;
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-attachment: fixed;
+}
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.parte1,.parte2,.parte3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide h1 {
+  color: rgb(39, 39, 39);
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.parte1 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_cores_ajustadas.jpg/800px-Pedro_Am%C3%A9rico_-_Independ%C3%AAncia_ou_Morte_-_cores_ajustadas.jpg);
+}
+.parte2 {
+  background-image: url(https://www.otempo.com.br/image/contentid/policy:1.2728360:1662467170/coroacao-de-dom-pedro-i-by-debret-jpg.jpg?f=3x2&w=1224);
+}
+.parte3 {
+  background-image: url(https://i0.wp.com/jornal.usp.br/wp-content/uploads/2022/12/20221130_00_comercio_brasil_imperial_porto_estrela.jpg?fit=768%2C403&ssl=1);
+}
+.slide_texts {
+  background-color: rgb(188, 188, 188,.6);
+  border-radius: 30px;
+  padding: 30px;
+}
+.swiper-button-prev,.swiper-button-next{
+  border-radius: 50%;
+  background-color: white;
+  border:1px solid black;
+  padding: 30px;
+  transition: .5s;
+  color: black !important;
+}
+.swiper-button-prev:hover,.swiper-button-next:hover{
+  background-color: black;
+  border: 1px solid white;
+  color: white !important;
 }
 a {
   text-decoration: none;
@@ -273,6 +317,7 @@ footer span{
   overflow: hidden;
   transition: border 300ms, color 300ms;
   user-select: none;
+  background-color: black;
 }
 
 .button p {
