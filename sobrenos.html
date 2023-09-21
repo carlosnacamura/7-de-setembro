@@ -1,46 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="stylesheet" href="css/sobre.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre</title>
+    <title>Sobre a independência</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="sobre.css" />
   </head>
   <body>
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">
+          <div class="slide">
+            <img
+              src="https://imagens.ebc.com.br/93Xdc8_53zvubO_xEpWsElgveEE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2880px-pedro_americo_-_independencia_ou_morte_-_cores_ajustadas_0.jpg?itok=yadd99j9"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium blanditiis quaerat nisi deserunt deleniti voluptate
+              aliquid voluptates assumenda dolor quasi, reprehenderit ipsum,
+              ipsa ea repellendus? Temporibus quos alias ut quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide">
+            <img
+              src="https://imagens.ebc.com.br/93Xdc8_53zvubO_xEpWsElgveEE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2880px-pedro_americo_-_independencia_ou_morte_-_cores_ajustadas_0.jpg?itok=yadd99j9"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium blanditiis quaerat nisi deserunt deleniti voluptate
+              aliquid voluptates assumenda dolor quasi, reprehenderit ipsum,
+              ipsa ea repellendus? Temporibus quos alias ut quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide">
+            <img
+              src="https://imagens.ebc.com.br/93Xdc8_53zvubO_xEpWsElgveEE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2880px-pedro_americo_-_independencia_ou_morte_-_cores_ajustadas_0.jpg?itok=yadd99j9"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium blanditiis quaerat nisi deserunt deleniti voluptate
+              aliquid voluptates assumenda dolor quasi, reprehenderit ipsum,
+              ipsa ea repellendus? Temporibus quos alias ut quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide">
+            <img
+              src="https://imagens.ebc.com.br/93Xdc8_53zvubO_xEpWsElgveEE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2880px-pedro_americo_-_independencia_ou_morte_-_cores_ajustadas_0.jpg?itok=yadd99j9"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium blanditiis quaerat nisi deserunt deleniti voluptate
+              aliquid voluptates assumenda dolor quasi, reprehenderit ipsum,
+              ipsa ea repellendus? Temporibus quos alias ut quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide">
+            <img
+              src="https://imagens.ebc.com.br/93Xdc8_53zvubO_xEpWsElgveEE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2880px-pedro_americo_-_independencia_ou_morte_-_cores_ajustadas_0.jpg?itok=yadd99j9"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium blanditiis quaerat nisi deserunt deleniti voluptate
+              aliquid voluptates assumenda dolor quasi, reprehenderit ipsum,
+              ipsa ea repellendus? Temporibus quos alias ut quisquam.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="swiper-pagination"></div>
-
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-
-      <div class="swiper-scrollbar"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
-        direction: "vertical",
-        loop: true,
-
-        pagination: {
-          el: ".swiper-pagination",
+        direction: "horizontal",
+        effect: 'coverflow',
+        slidesPerView: 3,
+        grapCursor: true,
+        keyboard: true,
+        coverflowEffect: {
+          rotate: -6,
         },
-
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-
-        scrollbar: {
-          el: ".swiper-scrollbar",
+        pagination: {
+          el: ".swiper-pagination",
         },
       });
     </script>
